@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Sidenav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/suvoportfolio" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectView />} />
         <Route path="/me" element={<Me />} />
