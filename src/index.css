@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000013;
+  color: White;
+}
+
+.home {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./assets/images/full-moon-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px 500px;
+  background-color: transparent;
+  padding: 10px 20px;
+}
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  /* background-image: url('./assets/gif/Mr3W.gif'); */
+}
+.content {
+  font-size: 25px;
+}
+
+.sidenav {
+  background-color: #ddd;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px 20px;
+}
+
+.sidenav ul {
+  list-style: none;
+  display: flex;
+}
+
+.sidenav ul li a {
+  font-size: 22px;
+  padding: 0px 10px;
+  color: #000;
+}
+
+.projects {
+  padding: 70px 20px;
+}
+
+.projects ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects ul li button {
+  padding: 5px 10px;
+  border: none;
+  margin: 5px 10px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.projects ul li button:hover {
+  color: #3737a0;
+}
+
+@media (max-width: 768px) {
+  .projects ul {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    align-items: center;
+  }
+
+  .projects ul li button {
+    margin: 5px 0; /* Adjust margin for buttons in a column layout */
+  }
+}
+
+.social-links ul {
+  list-style: none;
+  display: flex;
+  margin-top: 15px;
+}
+.social-links ul li {
+  padding-right: 5px;
+}
+.social-links ul li .linkedin {
+  color: black;
+  transition: 0.3s ease;
+}
+.social-links ul li .linkedin:hover {
+  color: blue;
+  background-color: #fff;
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+}
+.social-links ul li .github {
+  color: black;
+  transition: 0.3s ease;
+}
+.social-links ul li .github:hover {
+  background-color: #fff;
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+}
+.header-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.projects-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(250px, 1fr); /* Set to 4 cards in a row */
+  gap: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-title {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.card:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.card:hover .card-title {
+  color: #fff;
+}
+.project-view {
+  padding: 70px 40px 0px 40px;
+}
+.project-view p {
+  text-align: justify;
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.image-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal img {
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.modal button {
+  margin-top: 10px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+.about {
+  padding: 70px 40px 0px 40px;
+  line-height: 50px;
+  background-image: url("./assets/images/ryzone_casestudy_react_image.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.skills ul {
+  display: flex;
+  list-style: none;
+}
+.skills ul li {
+  margin-right: 10px;
+  font-size: 25px;
+}
